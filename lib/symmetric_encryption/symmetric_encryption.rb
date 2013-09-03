@@ -199,7 +199,7 @@ module SymmetricEncryption
   #     # use the current default cipher
   #     encoded_str.ends_with?("\n") ? SymmetricEncryption.cipher(0) : SymmetricEncryption.cipher
   #   end
-  def self.cipher_selector=(&block)
+  def self.cipher_selector=(block)
     @@cipher_selector = block
   end
 
